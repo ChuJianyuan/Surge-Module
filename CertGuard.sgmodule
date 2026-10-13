@@ -1,0 +1,15 @@
+#!name=CertGuard
+#!desc=屏蔽苹果证书吊销与验证服务器（OCSP、CRL、App Attest 等）的连接，防止通过 P12 证书侧载的应用因证书被吊销而掉签失效。
+#!author=hinokka
+#!homepage=https://hub.hin0ka.com
+#!icon=https://hub.hin0ka.com/modules/icons/CertGuard.png
+#!date=2026-10-10
+
+[Rule]
+DOMAIN,ocsp.apple.com,REJECT
+DOMAIN,ocsp2.apple.com,REJECT
+DOMAIN,valid.apple.com,REJECT
+DOMAIN,crl.apple.com,REJECT
+DOMAIN,certs.apple.com,REJECT
+DOMAIN,appattest.apple.com,REJECT
+DOMAIN,vpp.itunes.apple.com,REJECT
