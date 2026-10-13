@@ -1,0 +1,10 @@
+#!name=插件模块跳转
+#!desc=Loon和Surge插件中心跳转到Egern
+#icon: https://iili.io/BDPVJ1I.png
+
+[Body Rewrite]
+http-response ^https://(pluginhub|hub)\.kelee\.one/ loon://import\?plugin= egern:///modules/new?url=
+http-response ^https://surge\.qingr\.moe/ surge:///install-module\?url= egern:///modules/new?url=
+
+[MITM]
+hostname = %APPEND% pluginhub.kelee.one, hub.kelee.one, surge.qingr.moe
