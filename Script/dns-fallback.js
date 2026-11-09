@@ -1,6 +1,6 @@
 
 /*
- * Surge DNS Fallback v2.1
+ * Surge DNS Fallback
  * Compact Logging Edition
  *
  * Sequential DoH failover
