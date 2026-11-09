@@ -9,8 +9,10 @@
  * IPv4 A records only
  */
 
+
 const SERVERS = [
   "https://120.76.130.89:16666/dns-query",
+  "https://47.99.65.147:16666/dns-query",
   "https://dns02.shanhai.you:16666/dns-query",
   "https://dns03.shanhai.you:16666/dns-query"
 ];
@@ -21,7 +23,7 @@ const COOLDOWN = 120000;
 const TTL = 60;
 const DEBUG = false;
 
-const STORE_KEY = "airport-dns-fallback-v2";
+const STORE_KEY = "airport-dns-fallback-v2-4dns";
 
 function log(message, important = false) {
   if (DEBUG || important) {
